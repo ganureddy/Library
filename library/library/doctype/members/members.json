@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "autoname": "field:email",
+ "creation": "2022-12-22 16:19:43.272294",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "basic_info_section",
+  "email",
+  "first_name",
+  "middle_name_optional",
+  "last_name",
+  "column_break_7",
+  "language",
+  "amended_from",
+  "unsubscribed",
+  "user_image",
+  "mobile_no",
+  "books_issued_section",
+  "books"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "basic_info_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "unique": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "First Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "middle_name_optional",
+   "fieldtype": "Data",
+   "label": "Middle Name (Optional)"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Members",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "unsubscribed",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Unsubscribed"
+  },
+  {
+   "fieldname": "user_image",
+   "fieldtype": "Attach Image",
+   "label": "User Image"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "books_issued_section",
+   "fieldtype": "Section Break",
+   "label": "Books Issued"
+  },
+  {
+   "fieldname": "books",
+   "fieldtype": "Table",
+   "label": "books ",
+   "options": "books_issued"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-12-22 17:23:46.479936",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Members",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

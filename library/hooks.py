@@ -9,6 +9,28 @@ app_color = "grey"
 app_email = "ganureddy54@gmial.com"
 app_license = "MIT"
 
+fixtures = [
+        {"dt": "Role", "filters": [
+            [
+            "name", "in", [
+                    "Library Manager" ,
+                    "Library User"
+    		       ]
+                ]
+            ]},
+        # {"dt": "Blogger", "filters": [
+        #     [   
+        #     "role", "in", [
+        #             "Library Manager",
+        #             "Library User"
+    	# 	       ]
+        #         ]
+        #     ]},
+        ]
+
+
+
+
 # Includes in <head>
 # ------------------
 
@@ -96,11 +118,9 @@ app_license = "MIT"
 # Hook on document methods and events
 
 # doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
+# 	"*": {
+# 		"after_install": "library.events.create_custom_role",
+# 	}
 # }
 
 # Scheduled Tasks
